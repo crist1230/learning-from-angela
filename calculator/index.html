@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <h1>Calculator</h1>
+
+    <!---
+    When we click submit, the data gets posted to the location of action.
+    If you don't have 'action' the form will send its data to whatever page it is currently on.
+    In this case, we're showing this page of html on the root route of localhost:3000.
+    If that's where we want the form information to be posted (which it is) then  we don't
+    technically need the 'action' attribute but we're including it anyway for clarity's sake.
+    --->
+    <form action="/" method="post">
+      <input type="text" name="n1" placeholder="First Number">
+      <input type="text" name="n2" placeholder="Second Number">
+      <button type="submit" name="submit">Calculate</button>
+    </form>
+
+  </body>
+</html>
